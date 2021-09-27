@@ -8,18 +8,18 @@
 			},
 			"PIDs": [
 				[
-					42,
-					85,
-					35
+					59,
+					119,
+					49
 				],
 				[
-					46,
-					90,
-					38
+					64,
+					126,
+					53
 				],
 				[
-					45,
-					90,
+					63,
+					126,
 					0
 				],
 				[
@@ -40,7 +40,7 @@
 			],
 			"RC": {
 				"RC_RATE": 1.21,
-				"RC_EXPO": 0.21,
+				"RC_EXPO": 0.25,
 				"roll_pitch_rate": 0,
 				"roll_rate": 0.75,
 				"pitch_rate": 0.75,
@@ -49,10 +49,10 @@
 				"throttle_MID": 0.5,
 				"throttle_EXPO": 0,
 				"dynamic_THR_breakpoint": 1350,
-				"RC_YAW_EXPO": 0.3,
+				"RC_YAW_EXPO": 0.25,
 				"rcYawRate": 1,
 				"rcPitchRate": 1.21,
-				"RC_PITCH_EXPO": 0.21,
+				"RC_PITCH_EXPO": 0.25,
 				"roll_rate_limit": 1998,
 				"pitch_rate_limit": 1998,
 				"yaw_rate_limit": 1998,
@@ -61,8 +61,8 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				2,
-				-2
+				0,
+				0
 			],
 			"ServoConfig": [
 				{
@@ -640,7 +640,7 @@
 			],
 			"RC": {
 				"RC_RATE": 1.21,
-				"RC_EXPO": 0.21,
+				"RC_EXPO": 0.25,
 				"roll_pitch_rate": 0,
 				"roll_rate": 0.75,
 				"pitch_rate": 0.75,
@@ -649,10 +649,10 @@
 				"throttle_MID": 0.5,
 				"throttle_EXPO": 0,
 				"dynamic_THR_breakpoint": 1350,
-				"RC_YAW_EXPO": 0.3,
+				"RC_YAW_EXPO": 0.25,
 				"rcYawRate": 1,
 				"rcPitchRate": 1.21,
-				"RC_PITCH_EXPO": 0.21,
+				"RC_PITCH_EXPO": 0.25,
 				"roll_rate_limit": 1998,
 				"pitch_rate_limit": 1998,
 				"yaw_rate_limit": 1998,
@@ -661,8 +661,8 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				2,
-				-2
+				0,
+				0
 			],
 			"ServoConfig": [
 				{
@@ -1240,7 +1240,7 @@
 			],
 			"RC": {
 				"RC_RATE": 1.21,
-				"RC_EXPO": 0.21,
+				"RC_EXPO": 0.25,
 				"roll_pitch_rate": 0,
 				"roll_rate": 0.75,
 				"pitch_rate": 0.75,
@@ -1249,10 +1249,10 @@
 				"throttle_MID": 0.5,
 				"throttle_EXPO": 0,
 				"dynamic_THR_breakpoint": 1350,
-				"RC_YAW_EXPO": 0.3,
+				"RC_YAW_EXPO": 0.25,
 				"rcYawRate": 1,
 				"rcPitchRate": 1.21,
-				"RC_PITCH_EXPO": 0.21,
+				"RC_PITCH_EXPO": 0.25,
 				"roll_rate_limit": 1998,
 				"pitch_rate_limit": 1998,
 				"yaw_rate_limit": 1998,
@@ -1261,8 +1261,8 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				2,
-				-2
+				0,
+				0
 			],
 			"ServoConfig": [
 				{
@@ -2323,7 +2323,7 @@
 	},
 	"PID_ADVANCED_CONFIG": {
 		"gyro_sync_denom": 1,
-		"pid_process_denom": 1,
+		"pid_process_denom": 2,
 		"use_unsyncedPwm": 0,
 		"fast_pwm_protocol": 7,
 		"motor_pwm_rate": 480,
@@ -2842,7 +2842,7 @@
 					"name": "DYNAMIC_FILTER"
 				}
 			],
-			"_featureMask": 809828360,
+			"_featureMask": 809762824,
 			"_analyticsChanges": {}
 		}
 	},
@@ -2852,7 +2852,7 @@
 		"mincommand": 1000,
 		"motor_count": 4,
 		"motor_poles": 14,
-		"use_dshot_telemetry": false,
+		"use_dshot_telemetry": true,
 		"use_esc_sensor": false
 	},
 	"GPS_CONFIG": {
@@ -2982,7 +2982,7 @@
 					"visible": true
 				}
 			],
-			"_beeperMask": 8379835
+			"_beeperMask": 8379817
 		},
 		"dshotBeaconTone": 1,
 		"dshotBeaconConditions": {
