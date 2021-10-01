@@ -10,33 +10,17 @@
 				[
 					55,
 					111,
-					46,
-					30,
-					117,
-					1.21,
-					0.75,
-					0,
-					0.25
+					46
 				],
 				[
 					60,
 					117,
-					49,
-					33,
-					124,
-					1.21,
-					0.75,
-					0.25
+					49
 				],
 				[
 					59,
 					117,
-					0,
-					0,
-					117,
-					1,
-					0.8,
-					0.25
+					0
 				],
 				[
 					50,
@@ -626,33 +610,17 @@
 				[
 					55,
 					111,
-					46,
-					30,
-					117,
-					1.21,
-					0.75,
-					0,
-					0.25
+					46
 				],
 				[
 					60,
 					117,
-					49,
-					33,
-					124,
-					1.21,
-					0.75,
-					0.25
+					49
 				],
 				[
 					59,
 					117,
-					0,
-					0,
-					117,
-					1,
-					0.8,
-					0.25
+					0
 				],
 				[
 					50,
@@ -1242,33 +1210,17 @@
 				[
 					55,
 					111,
-					46,
-					30,
-					117,
-					1.21,
-					0.75,
-					0,
-					0.25
+					46
 				],
 				[
 					60,
 					117,
-					49,
-					33,
-					124,
-					1.21,
-					0.75,
-					0.25
+					49
 				],
 				[
 					59,
 					117,
-					0,
-					0,
-					117,
-					1,
-					0.8,
-					0.25
+					0
 				],
 				[
 					50,
@@ -1912,7 +1864,7 @@
 			{
 				"identifier": 4,
 				"functions": [
-					"MSP"
+					"RX_SERIAL"
 				],
 				"msp_baudrate": "115200",
 				"gps_baudrate": "57600",
@@ -1921,9 +1873,7 @@
 			},
 			{
 				"identifier": 5,
-				"functions": [
-					"RX_SERIAL"
-				],
+				"functions": [],
 				"msp_baudrate": "115200",
 				"gps_baudrate": "57600",
 				"telemetry_baudrate": "AUTO",
@@ -2651,22 +2601,22 @@
 		"gyro_2_align": 1
 	},
 	"RX_CONFIG": {
-		"serialrx_provider": 2,
+		"serialrx_provider": 9,
 		"stick_max": 1900,
 		"stick_center": 1500,
 		"stick_min": 1050,
 		"spektrum_sat_bind": 0,
 		"rx_min_usec": 885,
 		"rx_max_usec": 2115,
-		"rcInterpolation": 2,
-		"rcInterpolationInterval": 19,
+		"rcInterpolation": 3,
+		"rcInterpolationInterval": 6,
 		"rcInterpolationChannels": 2,
 		"airModeActivateThreshold": 1250,
 		"rxSpiProtocol": 0,
 		"rxSpiId": 0,
 		"rxSpiRfChannelCount": 0,
 		"fpvCamAngleDegrees": 30,
-		"rcSmoothingType": 1,
+		"rcSmoothingType": 0,
 		"rcSmoothingInputCutoff": 0,
 		"rcSmoothingDerivativeCutoff": 0,
 		"rcSmoothingInputType": 1,
@@ -2746,18 +2696,10 @@
 		{
 			"mode": 1,
 			"value": 1500
-		},
-		{
-			"mode": 1,
-			"value": 1500
-		},
-		{
-			"mode": 1,
-			"value": 1500
 		}
 	],
 	"RSSI_CONFIG": {
-		"channel": 12
+		"channel": 0
 	},
 	"FEATURE_CONFIG": {
 		"features": {
@@ -2890,9 +2832,8 @@
 					"name": "DYNAMIC_FILTER"
 				}
 			],
-			"_featureMask": 809762824,
-			"_analyticsChanges": {},
-			"_featureChanges": {}
+			"_featureMask": 809763848,
+			"_analyticsChanges": {}
 		}
 	},
 	"MOTOR_CONFIG": {
@@ -3047,7 +2988,7 @@
 					"visible": true
 				}
 			],
-			"_beeperMask": 514
+			"_beeperMask": 0
 		}
 	},
 	"MODE_RANGES_EXTRA": [

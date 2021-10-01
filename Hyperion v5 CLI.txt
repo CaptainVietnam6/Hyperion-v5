@@ -21,6 +21,7 @@ signature
 
 # feature
 feature -LED_STRIP
+feature TELEMETRY
 
 # beeper
 beeper -GYRO_CALIBRATED
@@ -41,12 +42,18 @@ beeper -CAM_CONNECTION_OPEN
 beeper -CAM_CONNECTION_CLOSE
 beeper -RC_SMOOTHING_INIT_FAIL
 
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
 # map
 map TAER1234
 
 # serial
 serial 0 2 115200 57600 0 115200
 serial 2 2048 115200 57600 0 115200
+serial 4 64 115200 57600 0 115200
+serial 5 0 115200 57600 0 115200
 
 # aux
 aux 1 1 5 900 1125 0 0
@@ -87,8 +94,11 @@ set dyn_lpf_gyro_min_hz = 240
 set dyn_lpf_gyro_max_hz = 600
 set acc_calibration = 3,101,-103,1
 set mag_hardware = NONE
-set rssi_channel = 12
+set rc_interp = MANUAL
+set rc_interp_int = 6
+set rc_smoothing_type = INTERPOLATION
 set fpv_mix_degrees = 30
+set serialrx_provider = CRSF
 set blackbox_p_ratio = 16
 set min_throttle = 1070
 set dshot_idle_value = 750
@@ -108,18 +118,21 @@ set gps_set_home_point_once = ON
 set pid_process_denom = 2
 set ledstrip_race_color = RED
 set osd_warn_batt_not_full = OFF
+set osd_warn_launch_control = OFF
 set osd_warn_no_gps_rescue = OFF
 set osd_warn_gps_rescue_disabled = OFF
-set osd_warn_rssi = ON
 set osd_warn_link_quality = ON
-set osd_rssi_alarm = 50
+set osd_warn_rssi_dbm = ON
+set osd_rssi_alarm = 30
 set osd_cap_alarm = 1500
 set osd_alt_alarm = 120
 set osd_vbat_pos = 6465
-set osd_rssi_pos = 6478
-set osd_link_quality_pos = 6482
+set osd_rssi_pos = 334
+set osd_link_quality_pos = 6511
+set osd_rssi_dbm_pos = 2409
+set osd_tim_2_pos = 2454
 set osd_flymode_pos = 4161
-set osd_g_force_pos = 6473
+set osd_g_force_pos = 6544
 set osd_throttle_pos = 4193
 set osd_vtx_channel_pos = 4149
 set osd_crosshairs_pos = 4333
@@ -130,13 +143,11 @@ set osd_mah_drawn_pos = 2434
 set osd_motor_diag_pos = 4225
 set osd_craft_name_pos = 4138
 set osd_compass_bar_pos = 4170
-set osd_altitude_pos = 2411
+set osd_altitude_pos = 2441
 set osd_power_pos = 4545
-set osd_warnings_pos = 14729
 set osd_avg_cell_voltage_pos = 4449
 set osd_nheading_pos = 4202
 set osd_esc_rpm_pos = 4257
-set osd_stat_tim_2 = OFF
 set osd_stat_max_spd = OFF
 set osd_stat_max_alt = ON
 set osd_stat_bbox = OFF
@@ -144,6 +155,7 @@ set osd_stat_max_g_force = ON
 set osd_stat_max_esc_rpm = ON
 set osd_stat_min_link_quality = ON
 set osd_stat_total_time = ON
+set osd_stat_min_rssi_dbm = ON
 set vtx_band = 1
 set vtx_channel = 1
 set vtx_power = 4
