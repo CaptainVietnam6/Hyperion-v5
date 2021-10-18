@@ -2333,7 +2333,7 @@
 		"gyroCalibDuration": 125,
 		"gyroOffsetYaw": 0,
 		"gyroCheckOverflow": 2,
-		"debugMode": 0,
+		"debugMode": 3,
 		"debugModeCount": 63
 	},
 	"LED_MODE_COLORS": [

@@ -92,7 +92,7 @@ set dyn_notch_min_hz = 90
 set dyn_notch_max_hz = 350
 set dyn_lpf_gyro_min_hz = 240
 set dyn_lpf_gyro_max_hz = 600
-set acc_calibration = 3,101,-103,1
+set acc_calibration = -35,23,-103,1
 set mag_hardware = NONE
 set rc_interp = MANUAL
 set rc_interp_int = 6
@@ -149,6 +149,7 @@ set osd_avg_cell_voltage_pos = 4449
 set osd_nheading_pos = 4202
 set osd_esc_rpm_pos = 4257
 set osd_stat_max_spd = OFF
+set osd_stat_min_rssi = OFF
 set osd_stat_max_alt = ON
 set osd_stat_bbox = OFF
 set osd_stat_max_g_force = ON
@@ -156,6 +157,7 @@ set osd_stat_max_esc_rpm = ON
 set osd_stat_min_link_quality = ON
 set osd_stat_total_time = ON
 set osd_stat_min_rssi_dbm = ON
+set debug_mode = GYRO_FILTERED
 set vtx_band = 1
 set vtx_channel = 1
 set vtx_power = 4
@@ -252,7 +254,7 @@ set yaw_expo = 25
 set roll_srate = 75
 set pitch_srate = 75
 set yaw_srate = 80
-set throttle_limit_percent = 80
+set throttle_limit_percent = 50
 
 rateprofile 2
 
