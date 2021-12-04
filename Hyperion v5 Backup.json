@@ -8,17 +8,17 @@
 			},
 			"PIDs": [
 				[
-					55,
+					44,
 					111,
-					46
+					43
 				],
 				[
-					60,
+					48,
 					117,
-					49
+					47
 				],
 				[
-					59,
+					47,
 					117,
 					0
 				],
@@ -61,7 +61,7 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				0,
+				4,
 				0
 			],
 			"ServoConfig": [
@@ -173,6 +173,14 @@
 					}
 				},
 				{
+					"id": 46,
+					"auxChannelIndex": 2,
+					"range": {
+						"start": 1900,
+						"end": 2100
+					}
+				},
+				{
 					"id": 13,
 					"auxChannelIndex": 4,
 					"range": {
@@ -194,14 +202,6 @@
 					"range": {
 						"start": 1700,
 						"end": 2100
-					}
-				},
-				{
-					"id": 0,
-					"auxChannelIndex": 0,
-					"range": {
-						"start": 900,
-						"end": 900
 					}
 				},
 				{
@@ -608,17 +608,17 @@
 			},
 			"PIDs": [
 				[
-					55,
+					44,
 					111,
-					46
+					43
 				],
 				[
-					60,
+					48,
 					117,
-					49
+					47
 				],
 				[
-					59,
+					47,
 					117,
 					0
 				],
@@ -661,7 +661,7 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				0,
+				4,
 				0
 			],
 			"ServoConfig": [
@@ -773,6 +773,14 @@
 					}
 				},
 				{
+					"id": 46,
+					"auxChannelIndex": 2,
+					"range": {
+						"start": 1900,
+						"end": 2100
+					}
+				},
+				{
 					"id": 13,
 					"auxChannelIndex": 4,
 					"range": {
@@ -794,14 +802,6 @@
 					"range": {
 						"start": 1700,
 						"end": 2100
-					}
-				},
-				{
-					"id": 0,
-					"auxChannelIndex": 0,
-					"range": {
-						"start": 900,
-						"end": 900
 					}
 				},
 				{
@@ -1208,17 +1208,17 @@
 			},
 			"PIDs": [
 				[
-					55,
+					44,
 					111,
-					46
+					43
 				],
 				[
-					60,
+					48,
 					117,
-					49
+					47
 				],
 				[
-					59,
+					47,
 					117,
 					0
 				],
@@ -1261,7 +1261,7 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				0,
+				4,
 				0
 			],
 			"ServoConfig": [
@@ -1373,6 +1373,14 @@
 					}
 				},
 				{
+					"id": 46,
+					"auxChannelIndex": 2,
+					"range": {
+						"start": 1900,
+						"end": 2100
+					}
+				},
+				{
 					"id": 13,
 					"auxChannelIndex": 4,
 					"range": {
@@ -1394,14 +1402,6 @@
 					"range": {
 						"start": 1700,
 						"end": 2100
-					}
-				},
-				{
-					"id": 0,
-					"auxChannelIndex": 0,
-					"range": {
-						"start": 900,
-						"end": 900
 					}
 				},
 				{
@@ -1831,7 +1831,7 @@
 					"GPS"
 				],
 				"msp_baudrate": "115200",
-				"gps_baudrate": "57600",
+				"gps_baudrate": "115200",
 				"telemetry_baudrate": "AUTO",
 				"blackbox_baudrate": "115200"
 			},
@@ -2630,7 +2630,7 @@
 		"failsafe_throttle": 1215,
 		"failsafe_switch_mode": 0,
 		"failsafe_throttle_low_delay": 75,
-		"failsafe_procedure": 0
+		"failsafe_procedure": 2
 	},
 	"RXFAIL_CONFIG": [
 		{
@@ -2832,7 +2832,7 @@
 					"name": "DYNAMIC_FILTER"
 				}
 			],
-			"_featureMask": 809763848,
+			"_featureMask": 809763976,
 			"_analyticsChanges": {}
 		}
 	},
@@ -2846,7 +2846,7 @@
 		"use_esc_sensor": false
 	},
 	"GPS_CONFIG": {
-		"provider": 0,
+		"provider": 1,
 		"ublox_sbas": 5,
 		"auto_config": 1,
 		"auto_baud": 1,
@@ -3018,6 +3018,11 @@
 			"linkedTo": 0
 		},
 		{
+			"id": 46,
+			"modeLogic": 1,
+			"linkedTo": 0
+		},
+		{
 			"id": 13,
 			"modeLogic": 0,
 			"linkedTo": 0
@@ -3029,11 +3034,6 @@
 		},
 		{
 			"id": 36,
-			"modeLogic": 0,
-			"linkedTo": 0
-		},
-		{
-			"id": 0,
 			"modeLogic": 0,
 			"linkedTo": 0
 		},
