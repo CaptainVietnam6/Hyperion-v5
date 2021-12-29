@@ -1,5 +1,5 @@
 {
-	"generatedBy": "10.7.0",
+	"generatedBy": "10.7.1",
 	"apiVersion": "1.43.0",
 	"profiles": [
 		{
@@ -8,18 +8,18 @@
 			},
 			"PIDs": [
 				[
-					44,
-					111,
-					43
+					64,
+					124,
+					42
 				],
 				[
-					48,
-					117,
-					47
+					63,
+					130,
+					45
 				],
 				[
-					47,
-					117,
+					63,
+					138,
 					0
 				],
 				[
@@ -44,7 +44,7 @@
 				"roll_pitch_rate": 0,
 				"roll_rate": 0.75,
 				"pitch_rate": 0.75,
-				"yaw_rate": 0.8,
+				"yaw_rate": 0.75,
 				"dynamic_THR_PID": 0.65,
 				"throttle_MID": 0.5,
 				"throttle_EXPO": 0,
@@ -61,7 +61,7 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				4,
+				0,
 				0
 			],
 			"ServoConfig": [
@@ -644,7 +644,7 @@
 				"roll_pitch_rate": 0,
 				"roll_rate": 0.75,
 				"pitch_rate": 0.75,
-				"yaw_rate": 0.8,
+				"yaw_rate": 0.75,
 				"dynamic_THR_PID": 0.65,
 				"throttle_MID": 0.5,
 				"throttle_EXPO": 0,
@@ -661,7 +661,7 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				4,
+				0,
 				0
 			],
 			"ServoConfig": [
@@ -1244,7 +1244,7 @@
 				"roll_pitch_rate": 0,
 				"roll_rate": 0.75,
 				"pitch_rate": 0.75,
-				"yaw_rate": 0.8,
+				"yaw_rate": 0.75,
 				"dynamic_THR_PID": 0.65,
 				"throttle_MID": 0.5,
 				"throttle_EXPO": 0,
@@ -1261,7 +1261,7 @@
 				"rates_type": 0
 			},
 			"AccTrim": [
-				4,
+				0,
 				0
 			],
 			"ServoConfig": [
@@ -2325,7 +2325,7 @@
 		"use_unsyncedPwm": 0,
 		"fast_pwm_protocol": 7,
 		"motor_pwm_rate": 480,
-		"digitalIdlePercent": 7.5,
+		"digitalIdlePercent": 5.5,
 		"gyroUse32kHz": 0,
 		"motorPwmInversion": 0,
 		"gyroHighFsr": 0,
@@ -2333,7 +2333,7 @@
 		"gyroCalibDuration": 125,
 		"gyroOffsetYaw": 0,
 		"gyroCheckOverflow": 2,
-		"debugMode": 3,
+		"debugMode": 6,
 		"debugModeCount": 63
 	},
 	"LED_MODE_COLORS": [
