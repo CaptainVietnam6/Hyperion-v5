@@ -412,10 +412,10 @@ aux 1 1 5 900 1125 0 0
 aux 2 2 5 1300 1700 0 0
 aux 3 27 1 1900 2100 1 0
 aux 4 27 2 1900 2100 1 0
-aux 5 46 2 1900 2100 1 0
-aux 6 13 4 1300 1700 0 0
-aux 7 35 4 1850 2100 0 0
-aux 8 36 3 1700 2100 0 0
+aux 5 13 4 1300 1700 0 0
+aux 6 35 4 1850 2100 0 0
+aux 7 36 3 1700 2100 0 0
+aux 8 39 7 1700 2100 0 0
 aux 9 0 0 900 900 0 0
 aux 10 0 0 900 900 0 0
 aux 11 0 0 900 900 0 0
@@ -539,7 +539,7 @@ set acc_hardware = AUTO
 set acc_lpf_hz = 10
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
-set acc_calibration = -38,83,-64,1
+set acc_calibration = 40,79,-77,1
 set align_mag = DEFAULT
 set mag_align_roll = 0
 set mag_align_pitch = 1800
@@ -624,7 +624,7 @@ set failsafe_off_delay = 10
 set failsafe_throttle = 1215
 set failsafe_switch_mode = STAGE1
 set failsafe_throttle_low_delay = 75
-set failsafe_procedure = GPS-RESCUE
+set failsafe_procedure = DROP
 set failsafe_recovery_delay = 20
 set failsafe_stick_threshold = 30
 set align_board_roll = 0
@@ -664,9 +664,9 @@ set beeper_dshot_beacon_tone = 1
 set yaw_motors_reversed = ON
 set crashflip_motor_percent = 0
 set crashflip_expo = 35
-set 3d_deadband_low = 1406
-set 3d_deadband_high = 1514
-set 3d_neutral = 1460
+set 3d_deadband_low = 1475
+set 3d_deadband_high = 1525
+set 3d_neutral = 1500
 set 3d_deadband_throttle = 50
 set 3d_limit_low = 1000
 set 3d_limit_high = 2000
@@ -932,7 +932,7 @@ set displayport_max7456_col_adjust = 0
 set displayport_max7456_row_adjust = 0
 set displayport_max7456_inv = OFF
 set displayport_max7456_blk = 1
-set displayport_max7456_wht = 2
+set displayport_max7456_wht = 3
 set esc_sensor_halfduplex = OFF
 set esc_sensor_current_offset = 0
 set frsky_spi_autobind = OFF
@@ -1052,18 +1052,18 @@ set acro_trainer_angle_limit = 20
 set acro_trainer_lookahead_ms = 50
 set acro_trainer_debug_axis = ROLL
 set acro_trainer_gain = 75
-set p_pitch = 63
-set i_pitch = 130
-set d_pitch = 45
-set f_pitch = 251
-set p_roll = 64
-set i_roll = 124
-set d_roll = 42
-set f_roll = 214
-set p_yaw = 63
-set i_yaw = 138
+set p_pitch = 69
+set i_pitch = 135
+set d_pitch = 44
+set f_pitch = 228
+set p_roll = 63
+set i_roll = 128
+set d_roll = 41
+set f_roll = 216
+set p_yaw = 68
+set i_yaw = 135
 set d_yaw = 0
-set f_yaw = 156
+set f_yaw = 216
 set angle_level_strength = 50
 set horizon_level_strength = 50
 set horizon_transition = 75
@@ -1361,7 +1361,7 @@ set tpa_rate = 65
 set tpa_breakpoint = 1350
 set tpa_mode = D
 set throttle_limit_type = SCALE
-set throttle_limit_percent = 30
+set throttle_limit_percent = 50
 set roll_rate_limit = 1998
 set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
